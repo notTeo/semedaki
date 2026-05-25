@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Σεμεδάκι — Café Bistro στην Αγία Παρασκευή. Καφές, ροφήματα, snacks και cocktails. Αγίας Τριάδος 23, Αγία Παρασκευή." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Σεμεδάκι | Café Bistro · Αγία Παρασκευή" />
+  <meta property="og:description" content="Café · Bistro · Αγία Παρασκευή — Αγίας Τριάδος 23" />
+  <meta property="og:image" content="assets/logo.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="el_GR" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpg" />
+
+  <!-- Google Fonts — preconnect first, then stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+  <title>Σεμεδάκι | Café Bistro · Αγία Παρασκευή</title>
+</head>
+<body>
+
+  <!-- ─── Sticky Header ──────────────────────────────────────────────── -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner container">
+      <a href="#hero" class="header-logo-link" aria-label="Σεμεδάκι — αρχική σελίδα">
+        <img src="assets/logo.jpg" alt="Σεμεδάκι λογότυπο" class="header-logo" />
+      </a>
+
+      <nav class="header-nav" aria-label="Κύρια πλοήγηση">
+        <ul>
+          <li><a href="#menu">Μενού</a></li>
+          <li><a href="#hours">Ώρες</a></li>
+          <li><a href="#location">Επικοινωνία</a></li>
+        </ul>
+        <div class="header-social">
+          <a href="https://www.instagram.com/semedaki__/" target="_blank" rel="noopener noreferrer"
+             class="header-social-link" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                 stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/semedaki.cafe" target="_blank" rel="noopener noreferrer"
+             class="header-social-link" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                 stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+            </svg>
+          </a>
+        </div>
+      </nav>
+
+      <button
+        class="hamburger"
+        id="hamburger"
+        aria-label="Άνοιγμα μενού πλοήγησης"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ─── Mobile Menu Overlay ────────────────────────────────────────── -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-label="Μενού πλοήγησης">
+    <nav aria-label="Κινητή πλοήγηση">
+      <ul>
+        <li><a href="#menu">Μενού</a></li>
+        <li><a href="#hours">Ώρες</a></li>
+        <li><a href="#location">Επικοινωνία</a></li>
+      </ul>
+      <div class="mobile-menu-social">
+        <a href="https://www.instagram.com/semedaki__/" target="_blank" rel="noopener noreferrer"
+           class="mobile-social-link" aria-label="Instagram">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
+          </svg>
+        </a>
+        <a href="https://www.facebook.com/semedaki.cafe" target="_blank" rel="noopener noreferrer"
+           class="mobile-social-link" aria-label="Facebook">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+               stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+          </svg>
+        </a>
+      </div>
+    </nav>
+  </div>
+
+  <main>
+
+    <!-- ─── Hero ──────────────────────────────────────────────────────── -->
+    <section class="hero" id="hero" aria-label="Αρχική">
+
+      <!-- Decorative rings -->
+      <div class="hero-deco-ring" aria-hidden="true"></div>
+      <div class="hero-deco-ring" aria-hidden="true"></div>
+      <div class="hero-deco-ring" aria-hidden="true"></div>
+
+      <!-- Centered content: logo → text → buttons -->
+      <div class="hero-content">
+        <div class="hero-logo-wrap">
+          <img
+            src="assets/logo.jpg"
+            alt="Σεμεδάκι λογότυπο"
+            class="hero-logo"
+            width="160"
+            height="160"
+          />
+        </div>
+
+        <span class="hero-tag">Café · Bistro</span>
+        <h1 class="hero-title">σεμεδάκι</h1>
+        <p class="hero-subtitle">Αγίας Τριάδος 23 &middot; Αγία Παρασκευή</p>
+
+        <div class="hero-ctas">
+          <a href="#menu" class="btn btn-hero-primary">Δες το μενού</a>
+          <a href="#location" class="btn btn-hero-secondary">Βρες μας</a>
+        </div>
+
+        <a href="tel:+302130410354" class="hero-phone" aria-label="Τηλέφωνο 21 3041 0354">
+          21 3041 0354
+        </a>
+      </div>
+
+      <!-- Scroll indicator -->
+      <a
+        href="#menu"
+        class="scroll-indicator"
+        aria-label="Κύλισε κάτω για να δεις το μενού"
+      >
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </a>
+
+    </section>
+
+    <!-- ─── Menu ──────────────────────────────────────────────────────── -->
+    <section class="section-menu fade-section" id="menu" aria-labelledby="menu-heading">
+      <div class="container">
+        <div class="section-heading">
+          <h2 class="section-title" id="menu-heading">Μενού</h2>
+          <p class="section-subtitle">
+            Από τον espresso μέχρι τα cocktails — κάθε στιγμή έχει τη γεύση της.
+          </p>
+        </div>
+      </div>
+
+      <!-- Category pills — sticky, outside inner container so it can span full width -->
+      <div class="pills-wrapper">
+        <div class="container">
+          <nav class="category-pills" id="category-pills" aria-label="Κατηγορίες μενού">
+            <!-- Filled by script.js -->
+          </nav>
+        </div>
+      </div>
+
+      <div class="container">
+        <div id="menu-content" aria-live="polite">
+          <!-- Filled by script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── Hours ─────────────────────────────────────────────────────── -->
+    <section class="section-hours fade-section" id="hours" aria-labelledby="hours-heading">
+      <div class="container">
+        <div class="section-heading">
+          <h2 class="section-title" id="hours-heading">Ωράριο</h2>
+        </div>
+
+        <div class="hours-grid">
+          <div class="hours-column">
+            <h3 class="hours-column-title">Κατάστημα</h3>
+            <table class="hours-table">
+              <tbody>
+                <tr data-day="1,2,3,4,5">
+                  <td>Δευτέρα – Παρασκευή</td>
+                  <td class="hours-time">08:00 – 01:30</td>
+                </tr>
+                <tr data-day="6">
+                  <td>Σάββατο</td>
+                  <td class="hours-time">09:00 – 01:30</td>
+                </tr>
+                <tr data-day="0">
+                  <td>Κυριακή</td>
+                  <td class="hours-time">09:00 – 12:00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="hours-column">
+            <h3 class="hours-column-title">Παράδοση</h3>
+            <table class="hours-table">
+              <tbody>
+                <tr data-day="0,1,2,3,4,5,6">
+                  <td>Καθημερινά</td>
+                  <td class="hours-time">08:00 – 16:00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <p class="hours-note">
+          <em>Το ωράριο ενδέχεται να διαφέρει σε αργίες.</em>
+        </p>
+      </div>
+    </section>
+
+    <!-- ─── Location & Contact ────────────────────────────────────────── -->
+    <section class="section-location fade-section" id="location" aria-labelledby="location-heading">
+      <div class="container">
+        <div class="section-heading">
+          <h2 class="section-title" id="location-heading">Πού θα μας βρεις</h2>
+        </div>
+
+        <div class="location-grid">
+          <div class="location-info">
+            <div class="address-card">
+              <address>
+                <p>Αγίας Τριάδος 23</p>
+                <p>Αγία Παρασκευή, 153 43</p>
+                <p>Αθήνα</p>
+              </address>
+              <a href="tel:+302130410354" class="phone-link" aria-label="Τηλέφωνο 21 3041 0354">
+                21 3041 0354
+              </a>
+            </div>
+          </div>
+
+          <div class="location-map-wrap">
+            <div class="location-map">
+              <iframe
+                title="Χάρτης Σεμεδάκι — Αγίας Τριάδος 23, Αγία Παρασκευή"
+                src="https://maps.google.com/maps?q=Αγίας+Τριάδος+23,+Αγία+Παρασκευή,+153+43,+Greece&output=embed&hl=el&z=16"
+                width="100%"
+                height="100%"
+                style="border:0;"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <div class="maps-btn-wrap">
+              <a
+                href="https://www.google.com/maps/search/Αγίας+Τριάδος+23,+Αγία+Παρασκευή,+153+43,+Αθήνα"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-maps"
+              >Άνοιγμα στο Google Maps</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─── Footer ────────────────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+
+      <img src="assets/logo.jpg" alt="Σεμεδάκι λογότυπο" class="footer-logo" width="60" height="60" />
+
+      <p class="footer-copy">&copy; 2026 Σεμεδάκι. Όλα τα δικαιώματα διατηρούνται.</p>
+
+      <div class="footer-social">
+        <!-- Instagram -->
+        <a
+          href="https://www.instagram.com/semedaki__/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-link"
+          aria-label="Σεμεδάκι στο Instagram"
+        >
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="1.75"
+               stroke-linecap="round" stroke-linejoin="round"
+               aria-hidden="true" focusable="false">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
+          </svg>
+        </a>
+        <!-- Facebook -->
+        <a
+          href="https://www.facebook.com/semedaki.cafe"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-link"
+          aria-label="Σεμεδάκι στο Facebook"
+        >
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="1.75"
+               stroke-linecap="round" stroke-linejoin="round"
+               aria-hidden="true" focusable="false">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="assets/products.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
